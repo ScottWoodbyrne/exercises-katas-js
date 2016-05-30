@@ -30,4 +30,15 @@ describe("my function tester", function() {
     expect(result).toEqual("B");
   });
 
+  it("should be a string", function(){
+    var result = tester (65,65,65)
+    expect(typeof(result)).toEqual("string")
+  });
+
+  it("should be a one character long", function(){
+    var result = tester (65,65,65)
+    expect(result.length).toEqual(1)
+  });
+
+
 });
